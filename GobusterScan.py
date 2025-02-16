@@ -18,9 +18,6 @@ def mostrar_banner():
     print(f"{Fore.CYAN}║                             by:mxr    ║{Style.RESET_ALL}")
     print(f"{Fore.CYAN}╚════════════════════════════════════════╝{Style.RESET_ALL}")
 
-# Agregar al inicio de tu función principal:
-def ejecutar_gobuster():
-    mostrar_banner()
 
 def crear_directorio_resultados():
     """Crea el directorio para guardar los resultados si no existe."""
@@ -41,10 +38,12 @@ def obtener_carpeta_personalizada(carpeta_predeterminada):
         return carpeta_personalizada if carpeta_personalizada else carpeta_predeterminada
     return carpeta_predeterminada
 
+
 def ejecutar_gobuster():
     """
     Función principal que ejecuta Gobuster según las opciones seleccionadas por el usuario.
     """
+    mostrar_banner()
     print("\nElige el tipo de escaneo con Gobuster:")
     print("1. Escaneo de directorios")
     print("2. Escaneo de subdominios")
