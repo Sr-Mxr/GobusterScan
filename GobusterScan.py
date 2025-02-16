@@ -40,10 +40,10 @@ def obtener_carpeta_personalizada(carpeta_predeterminada):
 
 
 def ejecutar_gobuster():
+    mostrar_banner()
     """
     Función principal que ejecuta Gobuster según las opciones seleccionadas por el usuario.
     """
-    mostrar_banner()
     print("\nElige el tipo de escaneo con Gobuster:")
     print("1. Escaneo de directorios")
     print("2. Escaneo de subdominios")
